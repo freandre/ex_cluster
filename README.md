@@ -4,7 +4,8 @@
 
 This project is a simple test project made to test gossip discovery strategy of libcluster. While overloading :connect :disconnect and :list_nodes, I came to this error : 
 
-``` 18:28:16.549 [error] GenServer #PID<0.158.0> terminating
+``` 
+	18:28:16.549 [error] GenServer #PID<0.158.0> terminating
 ** (RuntimeError) Elixir.ExCluster.Connection.list/1 is undefined!
     (libcluster) lib/strategy/strategy.ex:117: Cluster.Strategy.ensure_exported!/3
     (libcluster) lib/strategy/strategy.ex:39: Cluster.Strategy.connect_nodes/4
@@ -27,6 +28,7 @@ The previous error will show.
 
 to test my fix, use my dependency in mix.exs, then you should be able to test a simple broadcast client :
 
-```ExCluster.Hello.start_link
+```
+ExCluster.Hello.start_link
 ExCluster.Hello.hello("Jo")
 ```
