@@ -28,4 +28,5 @@ The previous error will show.
 to test my fix, use my dependency in mix.exs, then you should be able to test a simple broadcast client :
 
 ```ExCluster.Hello.start_link
-ExCluster.Hello.hello("Jo")```
+ExCluster.Hello.hello("Jo")
+```
